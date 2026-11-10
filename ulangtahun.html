@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Make a Wish</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="cv"></canvas>
+
+<div class="card" id="s0">
+  <h1>Make a Wish</h1>
+  <p>Pengalaman ulang tahun interaktif</p>
+  <input id="name" placeholder="Nama yang berulang tahun" maxlength="30">
+  <input id="age" type="number" min="1" max="120" placeholder="Umur (boleh dikosongkan)">
+  <button id="start">Mulai</button>
+</div>
+
+<div class="card hidden" id="s1">
+  <h1>Tiup lilinnya!</h1>
+  <p id="left"></p>
+  <div class="cake"><div class="candles" id="candles"></div><div class="layer l1"></div><div class="layer l2"></div><div class="plate"></div></div>
+  <button id="blow">Tiup 🌬️</button>
+</div>
+
+<div class="card hidden" id="s2">
+  <h1>Buat permohonan</h1>
+  <p>Pejamkan mata, tarik napas, lalu tulis permohonanmu. Hanya kamu yang melihatnya.</p>
+  <input id="wish" type="password" placeholder="Permohonanmu..." autocomplete="off">
+  <button id="send">Kirim ke bintang ✨</button>
+  <div class="stars hidden" id="stars">★ ★ ★</div>
+  <p id="sending" class="hidden"></p>
+</div>
+
+<div class="card hidden" id="s3">
+  <h1>Ronde bonus 🎁</h1>
+  <p>Pilih satu kotak hadiah!</p>
+  <div class="boxes"><div class="box" data-i="0">🎁</div><div class="box" data-i="1">🎁</div><div class="box" data-i="2">🎁</div></div>
+  <div class="gift" id="gift"></div>
+  <button id="finish" class="hidden">Lanjut</button>
+</div>
+
+<div class="card hidden" id="s4">
+  <h1 id="fin"></h1>
+  <p id="finmsg"></p>
+  <p>Semoga harimu penuh tawa, cinta, dan banyak kue.</p>
+  <div style="font-size:3rem">🎂</div>
+  <button id="again">Main lagi</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
